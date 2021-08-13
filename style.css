@@ -35,8 +35,25 @@ body {
     height: 100vh;
 }
 
+body::before {
+    display: block;
+    content: url("./images/bg-pattern-top.svg");
+    z-index: -1;
+    transform: translate(-30%, -50%);
+    position: fixed;
+}
+
+body::after {
+    display: block;
+    content: url("./images/bg-pattern-bottom.svg");
+    z-index: -1;
+    transform: translate(70%, 40%);
+    position: fixed;
+}
+
 /* CONFIGURAÇÕES MODAL */
 .modal {
+
     background-color: var(--neutral-white);
 /* 
     width: 350px; */
